@@ -1,0 +1,5 @@
+HOST = 'localhost'
+USER = 'postgres'
+PASSWORD = 'PPythonUserassword'
+PORT = '5432'
+DBNAME = 'test_rostelekom'
