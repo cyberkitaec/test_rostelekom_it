@@ -24,7 +24,7 @@ class FirmsFromJson(BaseModel):
 
 def form_json_from_zip():
     with ZipFile('egrul.json.zip', 'r') as zip:
-        for file_name in zip.namelist()[9000:]:
+        for file_name in zip.namelist():
             with zip.open(file_name) as file:
                 json_file = file.read().decode("utf-8")
                 json_data = json.loads(json_file)
